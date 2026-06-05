@@ -12,9 +12,9 @@
     --gold-light: #F5EDD6;
     --gold-dark: #8C6A1A;
     --gold-mid: #E2C27A;
-    --ink: #141210;
-    --ink-soft: #3D3830;
-    --ink-muted: #7A7060;
+    --ink: #0D0B09;
+    --ink-soft: #1E1A14;
+    --ink-muted: #3D3525;
     --bg: #FDFAF4;
     --bg-warm: #F7F2E8;
     --bg-card: #FFFFFF;
@@ -82,8 +82,8 @@
 
   /* HERO */
   .hero {
-    background: var(--ink);
-    color: white;
+    background: #FFFFFF;
+    color: #0D0B09;
     padding: 5.5rem 2rem 5rem;
     position: relative;
     overflow: hidden;
@@ -94,9 +94,9 @@
     position: absolute;
     inset: 0;
     background:
-      radial-gradient(ellipse at 10% 60%, rgba(201,168,76,0.18) 0%, transparent 55%),
-      radial-gradient(ellipse at 90% 20%, rgba(27,122,110,0.15) 0%, transparent 45%),
-      radial-gradient(ellipse at 55% 90%, rgba(201,168,76,0.1) 0%, transparent 40%);
+      radial-gradient(ellipse at 10% 60%, rgba(201,168,76,0.12) 0%, transparent 55%),
+      radial-gradient(ellipse at 90% 20%, rgba(27,122,110,0.08) 0%, transparent 45%),
+      radial-gradient(ellipse at 55% 90%, rgba(201,168,76,0.08) 0%, transparent 40%);
   }
   .hero::after {
     content: '⚖';
@@ -105,7 +105,7 @@
     top: 50%;
     transform: translateY(-50%);
     font-size: clamp(120px, 18vw, 220px);
-    color: rgba(201,168,76,0.06);
+    color: rgba(140,106,26,0.08);
     line-height: 1;
     pointer-events: none;
     user-select: none;
@@ -120,8 +120,8 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    border: 1px solid rgba(201,168,76,0.45);
-    color: var(--gold-mid);
+    border: 1px solid rgba(140,106,26,0.45);
+    color: var(--gold-dark);
     font-size: 12px;
     font-weight: 500;
     font-family: 'IBM Plex Mono', monospace;
@@ -133,7 +133,7 @@
   .hero-eyebrow {
     font-family: 'IBM Plex Mono', monospace;
     font-size: clamp(0.85rem, 1.8vw, 1.1rem);
-    color: var(--gold);
+    color: var(--gold-dark);
     letter-spacing: 0.18em;
     text-transform: uppercase;
     margin-bottom: 0.6rem;
@@ -143,23 +143,24 @@
     font-size: clamp(2.4rem, 5.5vw, 3.8rem);
     line-height: 1.1;
     font-weight: 600;
+    color: #0D0B09;
     margin-bottom: 0.5rem;
   }
   .hero h1 em {
     font-style: italic;
-    color: var(--gold-mid);
+    color: var(--gold-dark);
   }
   .hero-tagline {
     font-family: 'Playfair Display', serif;
     font-style: italic;
     font-size: clamp(1rem, 2vw, 1.25rem);
-    color: rgba(255,255,255,0.55);
+    color: #2A2520;
     margin-bottom: 1.75rem;
     max-width: 680px;
   }
   .hero-desc {
     font-size: 15.5px;
-    color: rgba(255,255,255,0.7);
+    color: #1E1A14;
     max-width: 660px;
     line-height: 1.8;
     margin-bottom: 2.5rem;
@@ -168,14 +169,14 @@
     display: flex;
     gap: 0;
     flex-wrap: wrap;
-    border: 1px solid rgba(201,168,76,0.2);
+    border: 1px solid rgba(140,106,26,0.25);
     border-radius: 10px;
     overflow: hidden;
     width: fit-content;
   }
   .hero-meta-item {
     padding: 0.75rem 1.5rem;
-    border-right: 1px solid rgba(201,168,76,0.2);
+    border-right: 1px solid rgba(140,106,26,0.25);
   }
   .hero-meta-item:last-child { border-right: none; }
   .hero-meta-item .label {
@@ -183,14 +184,14 @@
     font-weight: 600;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: rgba(255,255,255,0.35);
+    color: #3D3525;
     font-family: 'IBM Plex Mono', monospace;
     margin-bottom: 3px;
   }
   .hero-meta-item .value {
     font-size: 14px;
     font-weight: 500;
-    color: rgba(255,255,255,0.88);
+    color: #0D0B09;
   }
 
   /* SECTION */
