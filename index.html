@@ -88,7 +88,6 @@
     position: relative;
     overflow: hidden;
   }
-  /* decorative scales/gavel motif via CSS */
   .hero::before {
     content: '';
     position: absolute;
@@ -721,7 +720,6 @@
       <li><a href="#schedule">Schedule</a></li>
       <li><a href="#speakers">Speakers</a></li>
       <li><a href="#organizers">Organizers</a></li>
-      <li><a href="#reviewers">Reviewers</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
@@ -780,10 +778,8 @@
           </filter>
         </defs>
 
-        <!-- Background -->
         <rect width="900" height="280" fill="url(#bgGrad)"/>
 
-        <!-- Subtle grid lines -->
         <g stroke="rgba(201,168,76,0.07)" stroke-width="0.5">
           <line x1="0" y1="56" x2="900" y2="56"/>
           <line x1="0" y1="112" x2="900" y2="112"/>
@@ -795,14 +791,11 @@
           <line x1="720" y1="0" x2="720" y2="280"/>
         </g>
 
-        <!-- PIPELINE: LLM → Judge → Decision nodes -->
-        <!-- Node 1: LLM Model -->
         <rect x="60" y="100" width="120" height="80" rx="10" fill="none" stroke="#1B7A6E" stroke-width="1.5" opacity="0.9"/>
         <text x="120" y="132" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="10" fill="#1B7A6E" opacity="0.8">LLM</text>
         <text x="120" y="148" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="10" fill="#1B7A6E" opacity="0.8">OUTPUT</text>
         <text x="120" y="167" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="8" fill="rgba(27,122,110,0.6)">v_n+1</text>
 
-        <!-- Arrow 1 -->
         <line x1="180" y1="140" x2="230" y2="140" stroke="url(#pipelineGrad)" stroke-width="1.5" marker-end="url(#arrow)"/>
         <defs>
           <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
@@ -810,33 +803,26 @@
           </marker>
         </defs>
 
-        <!-- Node 2: Judge (center, highlighted) -->
         <rect x="230" y="80" width="140" height="120" rx="10" fill="rgba(201,168,76,0.06)" stroke="#C9A84C" stroke-width="2" filter="url(#glow)"/>
         <text x="300" y="118" text-anchor="middle" font-family="'Playfair Display',serif" font-size="13" fill="#E2C27A" font-style="italic">⚖</text>
         <text x="300" y="137" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="11" fill="#C9A84C" font-weight="500">LLM JUDGE</text>
         <text x="300" y="154" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="8" fill="rgba(201,168,76,0.55)">validity in context?</text>
-        <!-- Failure sparks on judge -->
         <circle cx="255" cy="92" r="3" fill="#C9A84C" opacity="0.4"/>
         <circle cx="345" cy="88" r="2" fill="#C9A84C" opacity="0.3"/>
         <circle cx="260" cy="185" r="2.5" fill="#C9A84C" opacity="0.35"/>
 
-        <!-- Arrow 2 -->
         <line x1="370" y1="140" x2="420" y2="140" stroke="url(#pipelineGrad)" stroke-width="1.5" marker-end="url(#arrow)"/>
 
-        <!-- Node 3: Decision / Training Signal -->
         <rect x="420" y="100" width="130" height="80" rx="10" fill="none" stroke="#1B7A6E" stroke-width="1.5" opacity="0.9"/>
         <text x="485" y="132" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="9.5" fill="#1B7A6E" opacity="0.8">TRAINING</text>
         <text x="485" y="148" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="9.5" fill="#1B7A6E" opacity="0.8">SIGNAL / GATE</text>
         <text x="485" y="167" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="8" fill="rgba(27,122,110,0.6)">downstream</text>
 
-        <!-- Feedback loop arrow (curved, back from decision to LLM) -->
         <path d="M 485 100 Q 485 40 300 40 Q 120 40 120 100" fill="none" stroke="rgba(201,168,76,0.25)" stroke-width="1.2" stroke-dasharray="5,4"/>
         <text x="300" y="33" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="8" fill="rgba(201,168,76,0.4)">feedback loop — bias compounds</text>
 
-        <!-- Divider line -->
         <line x1="580" y1="40" x2="580" y2="240" stroke="rgba(201,168,76,0.12)" stroke-width="1"/>
 
-        <!-- Right panel: failure facets summary -->
         <text x="610" y="65" font-family="'IBM Plex Mono',monospace" font-size="9" fill="rgba(201,168,76,0.5)" letter-spacing="2">FAILURE FACETS</text>
 
         <g font-family="'IBM Plex Sans',sans-serif" font-size="11" fill="rgba(253,250,244,0.75)">
@@ -849,7 +835,6 @@
           <text x="610" y="212">⟶ Inter-judge consistency</text>
         </g>
 
-        <!-- Bottom bar -->
         <rect x="0" y="255" width="900" height="25" fill="rgba(201,168,76,0.07)"/>
         <text x="450" y="271" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="9" fill="rgba(201,168,76,0.45)" letter-spacing="3">CAN WE TRUST THE JUDGE? · NEURIPS 2026 · ATLANTA</text>
       </svg>
@@ -1011,7 +996,7 @@
   <div class="section-inner">
     <p class="section-label">Timeline</p>
     <h2 class="section-title">Important Dates</h2>
-    <p class="section-body">All deadlines are 11:59 PM AoE. The September 29 notification deadline is mandatory per NeurIPS policy — late notifications will not be permitted.</p>
+    <p class="section-body">All deadlines are 11:59 PM AoE. All notifications precede the mandatory NeurIPS deadline of September 29, 2026.</p>
     <div class="dates-grid">
       <div class="date-card">
         <div class="date-label">CFP Opens</div>
@@ -1020,13 +1005,13 @@
       </div>
       <div class="date-card">
         <div class="date-label">Submission Deadline</div>
-        <div class="date-value">August 29, 2026</div>
-        <div class="date-desc">Papers due via OpenReview · AoE</div>
+        <div class="date-value">August 29th, 2026</div>
+        <div class="date-desc">Papers due via OpenReview</div>
       </div>
       <div class="date-card">
         <div class="date-label">Notifications</div>
         <div class="date-value">September 29, 2026</div>
-        <div class="date-desc">Accept / reject decisions sent · AoE</div>
+        <div class="date-desc">Accept / reject decisions sent</div>
       </div>
       <div class="date-card">
         <div class="date-label">Camera-Ready</div>
@@ -1118,7 +1103,7 @@
         <div class="sched-time">09:20 – 10:20</div>
         <div class="sched-event">
           <strong><span class="stag stag-keynote">Keynote</span>Keynote Address</strong>
-          <span>Speaker TBA (Vijay Mohan, Google DeepMind — tentative)</span>
+          <span>Speaker TBD</span>
         </div>
       </div>
       <div class="schedule-row">
@@ -1190,14 +1175,12 @@
   <div class="section-inner">
     <p class="section-label">Invited Speakers</p>
     <h2 class="section-title">Keynote &amp; Panelists</h2>
-    <p class="section-body">Four panelists confirmed: Jennifer Vaughan (Microsoft Research NYC), Wei Xu (Georgia Tech), Vinija Jain (Google), and Rui Song (Amazon Core AI). Keynote under active discussion. ≥50% of confirmed invited speakers identify as women and/or from underrepresented groups.</p>
+    <p class="section-body">Four panelists confirmed: Jennifer Vaughan (Microsoft Research NYC), Wei Xu (Georgia Tech), and Rui Song (Amazon Core AI). Keynote and remaining panelists under active discussion. ≥50% of confirmed invited speakers identify as women and/or from underrepresented groups.</p>
 
-    <!-- To add a photo: replace <div class="speaker-photo-placeholder"> with
-         <img class="speaker-photo" src="images/speakers/name.jpg" alt="Name"> -->
     <div class="speakers-grid">
       <div class="speaker-card">
         <div class="speaker-photo-placeholder">
-          <span class="initials">VM</span>
+          <span class="initials">TBD</span>
           <span class="upload-hint">photo</span>
         </div>
         <h3>Eugene Yan</h3>
@@ -1224,7 +1207,7 @@
       </div>
       <div class="speaker-card">
         <div class="speaker-photo-placeholder">
-          <span class="initials">VJ</span>
+          <span class="initials">RS</span>
           <span class="upload-hint">photo</span>
         </div>
         <h3>Vinija Jain</h3>
@@ -1238,7 +1221,7 @@
         </div>
         <h3>Rui Song</h3>
         <p class="affil">Amazon Core AI</p>
-        <span class="role-badge role-panelist">Panelis</span>
+        <span class="role-badge role-panelist">Panelist</span>
       </div>
     </div>
   </div>
@@ -1250,8 +1233,6 @@
     <p class="section-label">Organizing Committee</p>
     <h2 class="section-title">Workshop Organizers</h2>
 
-    <!-- To add a photo: replace <div class="org-photo-placeholder"> with
-         <img class="speaker-photo" src="images/organizers/name.jpg" alt="Name" style="width:64px;height:64px;flex-shrink:0"> -->
     <div class="org-grid">
       <div class="org-card">
         <div class="org-photo-placeholder" title="Add photo: images/organizers/shanu.jpg">SS</div>
@@ -1265,7 +1246,7 @@
         <div class="org-photo-placeholder" title="Add photo: images/organizers/jayash.jpg">JK</div>
         <div class="org-info">
           <h3>Dr. Jayash Koshal</h3>
-          <p class="org-affil">Meta &amp; Northeastern University</p>
+          <p class="org-affil">Instacart &amp; Northeastern University</p>
         </div>
       </div>
       <div class="org-card">
@@ -1289,35 +1270,6 @@
           <p class="org-affil">Amazon Ads</p>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- REVIEWERS -->
-<section id="reviewers">
-  <div class="section-inner">
-    <p class="section-label">Program Committee</p>
-    <h2 class="section-title">Reviewers</h2>
-    <p class="reviewers-intro">
-      Each submission receives at least three reviews from program committee members spanning NLP, ML systems, safety, and industry. The committee prioritizes gender, career-stage, institutional, and geographic diversity.
-    </p>
-
-    <!-- CONFIRMED PC MEMBERS -->
-    <div class="reviewers-grid">
-      <div class="reviewer-name">Dr. Praveen Kolli — DoorDash Ads</div>
-      <div class="reviewer-name">Aayush Mudgal — Pinterest Ads</div>
-      <div class="reviewer-name">Dr. Sanket Bhat — Amazon Alexa AI</div>
-      <div class="reviewer-name">Dr. Martine De Cock — UW Tacoma</div>
-      <div class="reviewer-name">Dr. Mohammad Zandsalimy — Synopsys</div>
-      <div class="reviewer-name">Dr. Ehsan Aghaei — Cisco AI Defense</div>
-      <div class="reviewer-name">Dr. Giorgio Severi — Microsoft</div>
-    </div>
-
-    <!-- PLACEHOLDER for additional reviewers -->
-    <div class="reviewers-placeholder" style="margin-top:1.5rem;">
-      <strong>Additional reviewers to be announced</strong>
-      Program committee recruitment is ongoing. Target: 20–25 reviewers across NLP,
-      ML systems, safety, and industry. Interested in reviewing? Get in touch.
     </div>
   </div>
 </section>
@@ -1393,7 +1345,6 @@
         <a href="#schedule">Schedule</a>
         <a href="#speakers">Speakers</a>
         <a href="#organizers">Organizers</a>
-        <a href="#reviewers">Reviewers</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
