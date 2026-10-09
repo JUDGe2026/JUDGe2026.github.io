@@ -368,6 +368,24 @@
   .stag-poster  { background: #EAF3DE; color: #3B6D11; }
   .stag-spotlight { background: #FAE8FB; color: #7A1B8C; }
 
+  /* AUTHOR REGISTRATION NOTICE */
+  .notice-bar {
+    background: var(--gold-light);
+    border-bottom: 1px solid var(--border-strong);
+    color: var(--ink);
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 0.65rem 1.25rem;
+  }
+  .notice-bar a { color: var(--gold-dark); font-weight: 600; text-decoration: underline; }
+  .notice-bar a:hover { opacity: 0.8; }
+
+  /* ACCEPTED PAPER LISTS */
+  .paper-list { margin: 0.6rem 0 0 1.2rem; padding: 0; font-size: 13.5px; color: var(--ink-soft); line-height: 1.55; }
+  .paper-list li { margin-bottom: 0.35rem; }
+  .paper-list-cols { columns: 2 340px; column-gap: 2rem; }
+
   /* SPEAKERS */
   .speakers-grid {
     display: grid;
@@ -707,6 +725,12 @@
 </head>
 <body>
 
+<!-- AUTHOR REGISTRATION NOTICE -->
+<div class="notice-bar">
+  <strong>Authors of accepted papers:</strong> please register for NeurIPS 2026. For more details, see the
+  <a href="https://neurips.cc/Conferences/2026/AuthorRegistration" target="_blank" rel="noopener">NeurIPS Author Registration page ↗</a>
+</div>
+
 <!-- NAV -->
 <nav>
   <div class="nav-inner">
@@ -720,8 +744,7 @@
       <li><a href="#schedule">Schedule</a></li>
       <li><a href="#speakers">Speakers</a></li>
       <li><a href="#organizers">Organizers</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#overview">Overview</a></li>
+      <li><a href="#diversity">Diversity</a></li>
       <li><a href="#reviewers">Reviewer</a></li>
       <li><a href="#faq">FAQ</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -732,7 +755,7 @@
 <!-- HERO -->
 <section class="hero" id="top">
   <div class="hero-inner">
-    <div class="hero-badge">NeurIPS 2026 · Atlanta · Dec 12–13</div>
+    <div class="hero-badge">NeurIPS 2026 · Atlanta · Dec 12</div>
     <p class="hero-eyebrow">JUDGe</p>
     <h1>Can We Trust<br>the <em>Judge?</em></h1>
     <p class="hero-tagline">"Rigorous evaluation is the backbone of trustworthy AI — let's scrutinize the scrutinizers."</p>
@@ -746,7 +769,7 @@
       </div>
       <div class="hero-meta-item">
         <span class="label">Workshop Date</span>
-        <span class="value">Dec 12–13, 2026</span>
+        <span class="value">Dec 12, 2026</span>
       </div>
       <div class="hero-meta-item">
         <span class="label">Venue</span>
@@ -1009,7 +1032,7 @@
       </div>
       <div class="date-card">
         <div class="date-label">Submission Deadline</div>
-        <div class="date-value">August 29th, 2026</div>
+        <div class="date-value">August 29, 2026</div>
         <div class="date-desc">Papers due via OpenReview</div>
       </div>
       <div class="date-card">
@@ -1024,7 +1047,7 @@
       </div>
       <div class="date-card">
         <div class="date-label">Workshop Day</div>
-        <div class="date-value">Dec 12–13, 2026</div>
+        <div class="date-value">Dec 12, 2026</div>
         <div class="date-desc">NeurIPS 2026 · Atlanta, Georgia</div>
       </div>
     </div>
@@ -1119,6 +1142,13 @@
         <div class="sched-event">
           <strong><span class="stag stag-paper">Oral Papers</span>Paper Session I</strong>
           <!-- <span>15 min presentation + 5 min Q&amp;A each</span> -->
+          <ol class="paper-list">
+            <li>AUDIT: Validating LLM Judges Through Controlled Error Injection</li>
+            <li>Nine Judges, Two Effective Votes: Correlated Errors Undermine LLM Evaluation Panels</li>
+            <li>Your Judge Is a Confound: Evaluator and Attack Choice Distort Jailbreak-Safety Measurement for Fine-Tuned LLMs</li>
+            <li>Binarization Flattens the Score Space</li>
+            <li>Are You Sure You’re Sure? Two Confounds in a Sycophancy Benchmark</li>
+          </ol>
         </div>
       </div>
       <div class="schedule-row">
@@ -1131,7 +1161,13 @@
         <div class="sched-time">13:00 – 14:00</div>
         <div class="sched-event">
           <strong><span class="stag stag-spotlight">Junior Spotlight</span>Junior Spotlight Talks</strong>
-          <span>Pesentations for student and early-career authors</span>
+          <span>Presentations for student and early-career authors</span>
+          <ol class="paper-list">
+            <li>An Auditing Agent Asserts at Ceiling Whether or Not There Is Anything to Find</li>
+            <li>An LLM Judge for Subjective Behavior: Calibrate, Validate, Freeze, Then Optimize</li>
+            <li>Agreement With Humans Is Not a Property of the Judge</li>
+            <li>LLMs Can Verify What They Still Accept</li>
+          </ol>
         </div>
       </div>
       <div class="schedule-row">
@@ -1139,6 +1175,13 @@
        <div class="sched-event">
           <strong><span class="stag stag-paper">Oral Papers</span>Paper Session II</strong>
           <!-- <span>15 min presentation + 5 min Q&amp;A each</span> -->
+          <ol class="paper-list">
+            <li>When Large Language Model Judges Meet Watermarks: Provenance Signals Distort Automated Evaluation</li>
+            <li>LLM Judges Punish Verbalized Evaluation Awareness</li>
+            <li>Hard-Gate Candidacy in a Deployed Validator Suite</li>
+            <li>Can We Trust Adversarial Filtering? When the Judge Curates the Benchmark</li>
+            <li>Measuring the Measurer: Reliability of LLM Judge Scoring in Petri</li>
+          </ol>
         </div>
       </div>
       <div class="schedule-row">
@@ -1159,6 +1202,36 @@
         <div class="sched-event">
           <strong><span class="stag stag-poster">Poster</span>Poster Session &amp; Networking</strong>
           <span>75-minute poster session for accepted papers</span>
+          <ol class="paper-list paper-list-cols">
+            <li>When the Judge Selects the Data: An Outcome Audit of LLM Answer-Preservation Screens</li>
+            <li>When the Grader Is Fooled: Measuring How Often LLM Judges Accept Plausible-Wrong Answers Across Six Model Families</li>
+            <li>Estimating LLM Judge Error Rates and Outcome Prevalence with Limited or No Gold Labels</li>
+            <li>Ask, Then Grade: When Graded Scales Beat Binary Decomposition for LLM-as-Judge Evaluation</li>
+            <li>Right Answer, Wrong Reason: Auditing Contamination Detectors on the ASAP Essay Benchmark</li>
+            <li>What pass@k Cannot Measure: A Construct-Validity Stress Test for RL Post-Training Evaluation</li>
+            <li>Truthful AI Advisors: A Pre-Specified Benchmark for Large Language Model Honesty Under Preference Misalignment</li>
+            <li>Reliability of LLM-as-a-Judge: Confidence-Signal Disagreement and Response-Order Sensitivity</li>
+            <li>One Fact Apart: Hidden Failures in How AI Assistants Follow Rules</li>
+            <li>When Policies Change Probabilities: A Deployment Audit of LLM Code-Review Judges</li>
+            <li>BAJU: Label-Free Bayesian Auditing of LLM Judges Through Controlled Perturbations</li>
+            <li>Decomposing Yes–No Bias in LLM Moral Judgment: Stance, Position, Word, and Verdict</li>
+            <li>Recall Is Not Protection: Evaluating Safety Monitors Against Model Compliance</li>
+            <li>Beyond the verdict: Measuring effect of semantic factorization of safety judgment</li>
+            <li>What Does a Risk-Controlled LLM Judge Certificate Cover? Candidate Adaptation and Error Prevalence</li>
+            <li>Validity-Gated Generation of Overthinking-Inducing Questions</li>
+            <li>Does Reasoning Improve Psychological Depth in Large Language Models? Depends on Who’s Judging</li>
+            <li>Aligning Large Language Model Agents with Rational and Moral Preferences: A Supervised Fine-Tuning Approach</li>
+            <li>Drop the Act: Probe-Filtered RL for Faithful Chain-of-Thought Reasoning</li>
+            <li>Codebook-Driven Correction of LLM Evaluators: A Counter-Narrative Case Study</li>
+            <li>Depth, Not Breadth: Best-of-N Jailbreaking Beyond Surface Noise</li>
+            <li>Unread or Unenforced? Separating Representation from Enforcement Failure in Content Guards</li>
+            <li>When Better Than Chance Is Not Enough: Net-Benefit Bands for LLM Verifiers</li>
+            <li>StepShield: When, Not Whether to Intervene on Rogue AgentsLLM-as-a-judge</li>
+            <li>Reasons or Rhetoric? A Counterfactual Audit of LLM Judges in Multi-Agent Debate</li>
+            <li>Can We Trust Code Paraphrases?</li>
+            <li>Can We Trust Small Language Models as Judges?</li>
+            <li>Behind Aggregate Scores: What Systematically Varying Arena-Hard's LLM Judge Reveals</li>
+          </ol>
         </div>
       </div>
     </div>
