@@ -385,6 +385,7 @@
   .paper-list { margin: 0.6rem 0 0 1.2rem; padding: 0; font-size: 13.5px; color: var(--ink-soft); line-height: 1.55; }
   .paper-list li { margin-bottom: 0.35rem; }
   .paper-list-cols { columns: 2 340px; column-gap: 2rem; }
+  .paper-list .paper-authors { display: block; font-style: italic; font-size: 12.5px; color: var(--ink-muted); margin-top: 1px; }
 
   /* SPEAKERS */
   .speakers-grid {
@@ -1128,7 +1129,7 @@
         <div class="sched-time">09:10 – 10:00</div>
         <div class="sched-event">
           <strong><span class="stag stag-keynote">Keynote</span>Keynote Address</strong>
-          <span>Speaker TBD</span>
+          <span>Eugene Yan</span>
         </div>
       </div>
       <div class="schedule-row">
@@ -1143,11 +1144,11 @@
           <strong><span class="stag stag-paper">Oral Papers</span>Paper Session I</strong>
           <!-- <span>15 min presentation + 5 min Q&amp;A each</span> -->
           <ol class="paper-list">
-            <li>AUDIT: Validating LLM Judges Through Controlled Error Injection</li>
-            <li>Nine Judges, Two Effective Votes: Correlated Errors Undermine LLM Evaluation Panels</li>
-            <li>Your Judge Is a Confound: Evaluator and Attack Choice Distort Jailbreak-Safety Measurement for Fine-Tuned LLMs</li>
-            <li>Binarization Flattens the Score Space</li>
-            <li>Are You Sure You’re Sure? Two Confounds in a Sycophancy Benchmark</li>
+            <li>AUDIT: Validating LLM Judges Through Controlled Error Injection<span class="paper-authors">Md Mahmudur Rahman, Harsh Peswani, Elaine Wong, Dhruv Garg</span></li>
+            <li>Nine Judges, Two Effective Votes: Correlated Errors Undermine LLM Evaluation Panels<span class="paper-authors">Guneet Kohli</span></li>
+            <li>Your Judge Is a Confound: Evaluator and Attack Choice Distort Jailbreak-Safety Measurement for Fine-Tuned LLMs<span class="paper-authors">Taleef Tamsal, Jonathan Rusert</span></li>
+            <li>Binarization Flattens the Score Space<span class="paper-authors">Jacob Cole</span></li>
+            <li>Are You Sure You’re Sure? Two Confounds in a Sycophancy Benchmark<span class="paper-authors">Atharv Gupta, Akshat Jindal, Lavanya Nigam, Aryan Sood</span></li>
           </ol>
         </div>
       </div>
@@ -1163,10 +1164,9 @@
           <strong><span class="stag stag-spotlight">Junior Spotlight</span>Junior Spotlight Talks</strong>
           <span>Presentations for student and early-career authors</span>
           <ol class="paper-list">
-            <li>An Auditing Agent Asserts at Ceiling Whether or Not There Is Anything to Find</li>
-            <li>An LLM Judge for Subjective Behavior: Calibrate, Validate, Freeze, Then Optimize</li>
-            <li>Agreement With Humans Is Not a Property of the Judge</li>
-            <li>LLMs Can Verify What They Still Accept</li>
+            <li>An Auditing Agent Asserts at Ceiling Whether or Not There Is Anything to Find<span class="paper-authors">Aarav Shah</span></li>
+            <li>An LLM Judge for Subjective Behavior: Calibrate, Validate, Freeze, Then Optimize<span class="paper-authors">Jules Roussel</span></li>
+            <li>Agreement With Humans Is Not a Property of the Judge<span class="paper-authors">Diya Narayanan</span></li>
           </ol>
         </div>
       </div>
@@ -1176,11 +1176,11 @@
           <strong><span class="stag stag-paper">Oral Papers</span>Paper Session II</strong>
           <!-- <span>15 min presentation + 5 min Q&amp;A each</span> -->
           <ol class="paper-list">
-            <li>When Large Language Model Judges Meet Watermarks: Provenance Signals Distort Automated Evaluation</li>
-            <li>LLM Judges Punish Verbalized Evaluation Awareness</li>
-            <li>Hard-Gate Candidacy in a Deployed Validator Suite</li>
-            <li>Can We Trust Adversarial Filtering? When the Judge Curates the Benchmark</li>
-            <li>Measuring the Measurer: Reliability of LLM Judge Scoring in Petri</li>
+            <li>When Large Language Model Judges Meet Watermarks: Provenance Signals Distort Automated Evaluation<span class="paper-authors">Osama Zafar, Alexander Nemecek, Erman Ayday</span></li>
+            <li>LLM Judges Punish Verbalized Evaluation Awareness<span class="paper-authors">Noah T. Rossi, Ryan Lundqvist, Santiago Aranguri</span></li>
+            <li>Hard-Gate Candidacy in a Deployed Validator Suite<span class="paper-authors">Xin Xu</span></li>
+            <li>Can We Trust Adversarial Filtering? When the Judge Curates the Benchmark<span class="paper-authors">Enrique Molero, Linda Petrini, Louis Powell, Israel Abebe Azime</span></li>
+            <li>Measuring the Measurer: Reliability of LLM Judge Scoring in Petri<span class="paper-authors">Adeline Kassler, Axel Ahlqvist, Juan-Pablo Rivera, John Hughes</span></li>
           </ol>
         </div>
       </div>
@@ -1203,34 +1203,33 @@
           <strong><span class="stag stag-poster">Poster</span>Poster Session &amp; Networking</strong>
           <span>75-minute poster session for accepted papers</span>
           <ol class="paper-list paper-list-cols">
-            <li>When the Judge Selects the Data: An Outcome Audit of LLM Answer-Preservation Screens</li>
-            <li>When the Grader Is Fooled: Measuring How Often LLM Judges Accept Plausible-Wrong Answers Across Six Model Families</li>
-            <li>Estimating LLM Judge Error Rates and Outcome Prevalence with Limited or No Gold Labels</li>
-            <li>Ask, Then Grade: When Graded Scales Beat Binary Decomposition for LLM-as-Judge Evaluation</li>
-            <li>Right Answer, Wrong Reason: Auditing Contamination Detectors on the ASAP Essay Benchmark</li>
-            <li>What pass@k Cannot Measure: A Construct-Validity Stress Test for RL Post-Training Evaluation</li>
-            <li>Truthful AI Advisors: A Pre-Specified Benchmark for Large Language Model Honesty Under Preference Misalignment</li>
-            <li>Reliability of LLM-as-a-Judge: Confidence-Signal Disagreement and Response-Order Sensitivity</li>
-            <li>One Fact Apart: Hidden Failures in How AI Assistants Follow Rules</li>
-            <li>When Policies Change Probabilities: A Deployment Audit of LLM Code-Review Judges</li>
-            <li>BAJU: Label-Free Bayesian Auditing of LLM Judges Through Controlled Perturbations</li>
-            <li>Decomposing Yes–No Bias in LLM Moral Judgment: Stance, Position, Word, and Verdict</li>
-            <li>Recall Is Not Protection: Evaluating Safety Monitors Against Model Compliance</li>
-            <li>Beyond the verdict: Measuring effect of semantic factorization of safety judgment</li>
-            <li>What Does a Risk-Controlled LLM Judge Certificate Cover? Candidate Adaptation and Error Prevalence</li>
-            <li>Validity-Gated Generation of Overthinking-Inducing Questions</li>
-            <li>Does Reasoning Improve Psychological Depth in Large Language Models? Depends on Who’s Judging</li>
-            <li>Aligning Large Language Model Agents with Rational and Moral Preferences: A Supervised Fine-Tuning Approach</li>
-            <li>Drop the Act: Probe-Filtered RL for Faithful Chain-of-Thought Reasoning</li>
-            <li>Codebook-Driven Correction of LLM Evaluators: A Counter-Narrative Case Study</li>
-            <li>Depth, Not Breadth: Best-of-N Jailbreaking Beyond Surface Noise</li>
-            <li>Unread or Unenforced? Separating Representation from Enforcement Failure in Content Guards</li>
-            <li>When Better Than Chance Is Not Enough: Net-Benefit Bands for LLM Verifiers</li>
-            <li>StepShield: When, Not Whether to Intervene on Rogue AgentsLLM-as-a-judge</li>
-            <li>Reasons or Rhetoric? A Counterfactual Audit of LLM Judges in Multi-Agent Debate</li>
-            <li>Can We Trust Code Paraphrases?</li>
-            <li>Can We Trust Small Language Models as Judges?</li>
-            <li>Behind Aggregate Scores: What Systematically Varying Arena-Hard's LLM Judge Reveals</li>
+            <li>When the Judge Selects the Data: An Outcome Audit of LLM Answer-Preservation Screens<span class="paper-authors">YUXIANG WEI</span></li>
+            <li>When the Grader Is Fooled: Measuring How Often LLM Judges Accept Plausible-Wrong Answers Across Six Model Families<span class="paper-authors">Veerendra Kumar Sunkavalli</span></li>
+            <li>Estimating LLM Judge Error Rates and Outcome Prevalence with Limited or No Gold Labels<span class="paper-authors">Yichi Zhang, Ignacio Martinez</span></li>
+            <li>Ask, Then Grade: When Graded Scales Beat Binary Decomposition for LLM-as-Judge Evaluation<span class="paper-authors">Harsh Nandwani, Ishaan Gakhar</span></li>
+            <li>Right Answer, Wrong Reason: Auditing Contamination Detectors on the ASAP Essay Benchmark<span class="paper-authors">Alan Cai</span></li>
+            <li>What pass@k Can Miss: A Construct-Validity Stress Test for Output Diversity in Post-Training Evaluation<span class="paper-authors">Subham Rath, Rajat Dandekar, Sreedath Panat, Raj Dandekar</span></li>
+            <li>Truthful AI Advisors: A Pre-Specified Benchmark for Large Language Model Honesty Under Preference Misalignment<span class="paper-authors">Hamidreza Hasani Balyani, Seyed Pouyan Mousavi Davoudi, Alireza Amiri Margavi, Amin Gholami Davodi, Arshia Gharagozlou</span></li>
+            <li>Reliability of LLM-as-a-Judge: Confidence-Signal Disagreement and Response-Order Sensitivity<span class="paper-authors">Sreejita Chatterjee</span></li>
+            <li>One Fact Apart: Hidden Failures in How AI Assistants Follow Rules<span class="paper-authors">Zahid Syed, Aidan Lau, Moulik Jain, Cooper Lee, Shivank Garg</span></li>
+            <li>When Policies Change Probabilities: A Deployment Audit of LLM Code-Review Judges<span class="paper-authors">Rasvik Kudum, Max Corbett, Hitansh Paliwal, Romaisa Fatima, Thomas Jiralerspong, Sneheel Sarangi</span></li>
+            <li>Decomposing Yes–No Bias in LLM Moral Judgment: Stance, Position, Word, and Verdict<span class="paper-authors">Haonan Huang</span></li>
+            <li>Recall Is Not Protection: Evaluating Safety Monitors Against Model Compliance<span class="paper-authors">Sripad Karne</span></li>
+            <li>Beyond the verdict: Measuring effect of semantic factorization of safety judgment<span class="paper-authors">Rikhiya Ghosh, Himanshu Kumar, Sriram Venkatapathy, Thomas Paniagua, Alexandre G.R. Day, Pranab Mohanty</span></li>
+            <li>What Does a Risk-Controlled LLM Judge Certificate Cover? Candidate Adaptation and Error Prevalence<span class="paper-authors">Shiming Xie</span></li>
+            <li>Does Reasoning Improve Psychological Depth in Large Language Models? Depends on Who’s Judging<span class="paper-authors">Ruichen Zheng, Yihe Wang, Fabrice Y Harel-Canada, Sara Khosravi, Zeynep Senahan Yildiz, Amit Sahai, Nanyun Peng</span></li>
+            <li>Aligning Large Language Model Agents with Rational and Moral Preferences: A Supervised Fine-Tuning Approach<span class="paper-authors">Amit Dhanda, Daniel Li Chen, Christian Hansen</span></li>
+            <li>Drop the Act: Probe-Filtered RL for Faithful Chain-of-Thought Reasoning<span class="paper-authors">Swapnil Parekh, Naman Goyal</span></li>
+            <li>Codebook-Driven Correction of LLM Evaluators: A Counter-Narrative Case Study<span class="paper-authors">Jean-Romain Roy, Derek Ruths</span></li>
+            <li>Depth, Not Breadth: Best-of-N Jailbreaking Beyond Surface Noise<span class="paper-authors">Haoyu Zhang, Hanwen Liu, Yang Chen, shibo zheng, Xiangchen Guan, Zhuoxi Wang, Zijian Xiao, Xiao Luo, YI FENG, Haowen Xu, Mohammad Zandsalimy, Shanu Sushmita</span></li>
+            <li>Unread or Unenforced? Separating Representation from Enforcement Failure in Content Guards<span class="paper-authors">Haoyu Zhang, YI FENG, shibo zheng, Hanwen Liu, Haowen Xu, Xiao Luo, Zhuoxi Wang, Mohammad Zandsalimy, Shanu Sushmita</span></li>
+            <li>When Better Than Chance Is Not Enough: Net-Benefit Bands for LLM Verifiers<span class="paper-authors">Gi Young Lee, Chansam Park, Taewan Goo, Juhee Kim, Jong Cheol Jeong, Taejeong Bae, Dongwon Yun, Tae Hyung Kim</span></li>
+            <li>StepShield: When, Not Whether to Intervene on Rogue Agents<span class="paper-authors">Gloria Felicia, Zitha Sasindran, Jinfeng He, Michael Eniolade, Hemant Kumar B K, Milan Hussain Angati</span></li>
+            <li>Reasons or Rhetoric? A Counterfactual Audit of LLM Judges in Pairwise Debate-Style Evaluation<span class="paper-authors">Vikas Reddy</span></li>
+            <li>Can We Trust Code Paraphrases?<span class="paper-authors">Roman Machacek, Jeyhun Zakaryayev, Timo Kehrer</span></li>
+            <li>Can We Trust Small Language Models as Judges?<span class="paper-authors">Mingchuan Zou, Suchir Salhan, Paula Buttery</span></li>
+            <li>Behind Aggregate Scores: What Systematically Varying Arena-Hard's LLM Judge Reveals<span class="paper-authors">Louise Yorke</span></li>
+            <li>Weakness of Will in Large Language Models<span class="paper-authors">Sebastien Kawada, Manolis Kellis</span></li>
           </ol>
         </div>
       </div>
